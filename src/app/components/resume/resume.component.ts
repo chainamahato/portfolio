@@ -46,7 +46,7 @@ export class ResumeComponent {
       this.resumeDownloading = false;
     }, 15000);
 
-    const pdfUrl = '/assets/files/resume.pdf';
+    const pdfUrl = './assets/files/resume.pdf';
 
     const link = document.createElement('a');
     link.href = pdfUrl;

@@ -3,7 +3,7 @@
         "personalInformation": {
             "fullName": "Chaina Mahato",
             "dob": "15 Jan 1999",
-            "profilePic": "/assets/images/pictures/profile_pic.jpeg",
+            "profilePic": "./assets/images/pictures/profile_pic.jpeg",
             "contacts": [
                 {
                     "name": "dob",
