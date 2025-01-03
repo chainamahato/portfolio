@@ -22,16 +22,20 @@ export class ResumeComponent {
   ngOnInit(): void {
     this.dataService.getData().subscribe({
       next: (response) => {
-        this.data = response?.resume;
+        if(response){
+          this.data = response?.resume;
+          
+          setTimeout(() => {
+            this.resetScroll();
+          }, 500);
+        }
       },
       error: (error) => {}
     });
   }
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      this.resetScroll();
-    }, 100);
+    this.resetScroll();
   }
 
   // Method to trigger the reset action

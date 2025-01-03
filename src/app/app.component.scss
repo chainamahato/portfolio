@@ -34,6 +34,7 @@ app-navbar {
     right: 0;
     height: 100%;
     width: 4px;
+    z-index: 999999;
 
     .scrollbar {
         width: 100%;

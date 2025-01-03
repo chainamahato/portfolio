@@ -1,22 +1,16 @@
 <div class="main-container">
-    <div class="inner-content">
-        <span class="name-heading">Hello! My name is</span>
-        <h1 class="name">Chaina Mahato</h1>
+    <div *ngIf="data" class="inner-content">
+        <span class="name-heading">{{ data?.greeting }}</span>
+        <h1 class="name">{{ data?.name }}</h1>
         <div class="info-block">
-            <span class="about">Passionately Creating Design Wonders <br> Unleashing Boundless Creativity</span>
-            <!-- <div class="info-btn">
-                <span>MORE ABOUT ME</span>
-                <div class="img">
-                    <img src="/assets/images/icons/arrow_right.svg" alt="">
-                </div>
-            </div> -->
+            <span class="about">{{ data?.about }}</span>
         </div>
         
         <div class="footer">
             <div class="footer-inner">
-                <img class="main-character" src="./assets/images/icons/main-character.jpg" alt="">
+                <img class="main-character" src="{{ data?.profilePic }}" alt="">
                 <div class="footer-content">
-                    <div class="start-position">Design a better world today</div>
+                    <div class="start-position">{{ data?.description }}</div>
                     <div class="end-position">
                         <button (click)="navigateTo()">
                             <span>ABOUT ME</span>
