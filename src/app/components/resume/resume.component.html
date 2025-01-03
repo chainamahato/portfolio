@@ -1,15 +1,15 @@
 <div class="main-container">
     <div class="inner-content">
-        <div class="resume padding">
+        <div *ngIf="data" class="resume padding">
             <div class="personal-info">
                 <div class="profile-pic">
                     <img src="{{ data.personalInformation.profilePic }}" alt="">
                 </div>
                 <h3>{{ data.personalInformation.fullName }}</h3>
-                <div class="tags">
+                <div *ngIf="data?.personalInformation?.tags?.length > 0" class="tags">
                     <div class="tag" *ngFor="let tag of data.personalInformation.tags">{{ tag }}</div>
                 </div>
-                <div class="social-media">
+                <div *ngIf="data?.personalInformation?.socialMedia?.length > 0" class="social-media">
                     <button *ngFor="let item of data.personalInformation.socialMedia">
                         <img src="{{ item.icon }}" alt="">
                     </button>

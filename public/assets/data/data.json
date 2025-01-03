@@ -1,50 +1,25 @@
 {
     "resume": {
         "personalInformation": {
-            "fullName": "John Doe",
-            "dob": "09 March 2000",
+            "fullName": "Chaina Mahato",
+            "dob": "15 Jan 1999",
             "profilePic": "/assets/images/pictures/profile_pic.jpeg",
             "contacts": [
                 {
                     "name": "dob",
-                    "value": "09 March 2000"
+                    "value": "15 Jan 1999"
                 },
                 {
                     "name": "email",
-                    "value": "johndoe@example.com"
+                    "value": "mahatochaina2@gmail.com"
                 },
                 {
                     "name": "phone",
-                    "value": "+1 234 567 890"
+                    "value": "+91-8167680132"
                 },
                 {
                     "name": "address",
-                    "value": "1234 Main St, Apt 56, Some City, Some Country"
-                }
-            ],
-
-            "_comment1_": "Tags are optional",
-            "tags": [
-                "Creative Director",
-                "Graphic Designer"
-            ],
-            
-            "_comment2_": "Social Media is optional",
-            "socialMedia": [
-                {
-                    "name": "facebook",
-                    "icon": "/assets/images/icons/facebook.png",
-                    "url": ""
-                },
-                {
-                    "name": "linkedin",
-                    "icon": "/assets/images/icons/linkedin.png",
-                    "url": ""
-                },
-                {
-                    "name": "twitter",
-                    "icon": "/assets/images/icons/twitter.png",
-                    "url": ""
+                    "value": "Raladih , Purulia(723127), West Bengal"
                 }
             ]
         },
@@ -53,70 +28,46 @@
                 "heading": "About Me",
                 "bg_color": "white",
                 "description": [
-                    "A passionate and results-driven software engineer with 5+ years of experience specializing in web development and cloud technologies. Looking to contribute my skills in a challenging development role.",
-                    "A passionate and results-driven software engineer with 5+ years of experience specializing in web development and cloud technologies. Looking to contribute my skills in a challenging development role."
-                ]
-            },
-            "projects": {
-                "heading": "Projects",
-                "bg_color": "rgba(0, 0, 0, 0.05)",
-                "items": [
-                    {
-                        "title": "Portfolio Website",
-                        "description": "A personal website to showcase my resume, projects, and blog posts. Built using Angular and hosted on AWS.",
-                        "technologies": [
-                            "Angular",
-                            "AWS",
-                            "HTML",
-                            "CSS",
-                            "Bootstrap"
-                        ],
-                        "url": "https://github.com/johndoe/portfolio",
-                        "urlName": "Link"
-                    },
-                    {
-                        "title": "E-commerce Platform",
-                        "description": "Developed an e-commerce platform with features like user authentication, product catalog, and payment integration.",
-                        "technologies": [
-                            "React",
-                            "Node.js",
-                            "MongoDB",
-                            "Stripe API"
-                        ],
-                        "url": "https://github.com/johndoe/portfolio"
-                    }
+                    "I am passionate about pursuing a career that challenges and inspires me, with opportunities to work at the forefront of technology. I seek a role where I can contribute meaningfully while continuously learning, innovating, and enhancing my skills. My goal is to align my growth and expertise with the strategic objectives of the company, driving both personal and organizational success."
                 ]
             },
             "education": {
                 "heading": "Education",
-                "bg_color": "white",
+                "bg_color": "rgba(0, 0, 0, 0.05)",
                 "items": [
                     {
-                        "degree": "Bachelor of Science in Computer Science",
-                        "institution": "Some University",
-                        "location": "Some City, Some Country",
-                        "graduationYear": 2018,
-                        "gpa": "3.9/4.0"
+                        "degree": "Diploma in Elementary Education ",
+                        "institution": "Majhihira Ashram Primary Teacher’s Training Institute",
+                        "location": "Purulia, West Bengal",
+                        "graduationYear": 2021,
+                        "gpa": "70%"
                     },
                     {
-                        "degree": "Bachelor of Science in Computer Science",
-                        "institution": "Some University",
-                        "location": "Some City, Some Country",
-                        "graduationYear": 2018,
-                        "gpa": "3.9/4.0"
+                        "degree": "Bachelor of Arts in English",
+                        "institution": "Barabazar Bickram Tudu Memorial College",
+                        "location": "Purulia, West Bengal",
+                        "graduationYear": 2020,
+                        "gpa": "75%"
                     },
                     {
-                        "degree": "Bachelor of Science in Computer Science",
-                        "institution": "Some University",
-                        "location": "Some City, Some Country",
-                        "graduationYear": 2018,
-                        "gpa": "3.9/4.0"
+                        "degree": "West Bengal Council of Higher Secondary Education",
+                        "institution": "Barabazar High School",
+                        "location": "Purulia, West Bengal",
+                        "graduationYear": 2016,
+                        "gpa": "65%"
+                    },
+                    {
+                        "degree": "West Bengal Board of Secondary Education",
+                        "institution": "Barabazar Girls High School",
+                        "location": "Purulia, West Bengal",
+                        "graduationYear": 2014,
+                        "gpa": "72%"
                     }
                 ]
             },
             "workExperience": {
                 "heading": "Work Experience",
-                "bg_color": "rgba(0, 0, 0, 0.05)",
+                "bg_color": "white",
                 "items": [
                     {
                         "jobTitle": "Software Engineer",
@@ -148,35 +99,19 @@
             },
             "skills": {
                 "heading": "Skills",
-                "bg_color": "white",
+                "bg_color": "rgba(0, 0, 0, 0.05)",
                 "items": [
                     {
-                        "name": "JavaScript",
-                        "value": "10"
-                    },
-                    {
-                        "name": "Python",
-                        "value": "9"
-                    },
-                    {
-                        "name": "React",
+                        "name": "Advanced Diploma in Computer Application",
                         "value": "7"
                     },
                     {
-                        "name": "Node.js",
+                        "name": "MS Office: MS Word, MS Excel, MS PowerPoint",
                         "value": "8"
                     },
                     {
-                        "name": "CSS",
-                        "value": "6"
-                    },
-                    {
-                        "name": "HTML",
-                        "value": "10"
-                    },
-                    {
-                        "name": "SQL",
-                        "value": "5"
+                        "name": "Operating Systems: Windows 11, 10, 8, 7 & XP",
+                        "value": "8"
                     }
                 ],
                 "otherSkills": {
@@ -188,51 +123,18 @@
                     ]
                 }
             },
-            "certifications": {
-                "heading": "Certifications",
-                "bg_color": "rgba(0, 0, 0, 0.05)",
-                "items": [
-                    {
-                        "title": "Certified AWS Solutions Architect",
-                        "institution": "Amazon Web Services (AWS)",
-                        "year": 2022
-                    },
-                    {
-                        "title": "Certified Kubernetes Administrator",
-                        "institution": "Cloud Native Computing Foundation",
-                        "year": 2021
-                    }
-                ]
-            },
             "languages": {
                 "heading": "Languages",
                 "bg_color": "white",
                 "items": [
                     {
+                        "language": "Bengali"
+                    },
+                    {
+                        "language": "Hindi"
+                    },
+                    {
                         "language": "English"
-                    },
-                    {
-                        "language": "Spanish"
-                    }
-                ]
-            },
-            "references": {
-                "heading": "References",
-                "bg_color": "rgba(0, 0, 0, 0.05)",
-                "items": [
-                    {
-                        "name": "Jane Smith",
-                        "relationship": "Manager",
-                        "company": "Tech Solutions Inc.",
-                        "email": "janesmith@techsolutions.com",
-                        "phone": "+1 234 567 891"
-                    },
-                    {
-                        "name": "Robert Brown",
-                        "relationship": "Professor",
-                        "company": "Some University",
-                        "email": "robert.brown@someuniversity.edu",
-                        "phone": "+1 234 567 892"
                     }
                 ]
             }

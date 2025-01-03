@@ -2,6 +2,8 @@ import { Component, ElementRef, HostListener, Inject, Renderer2, ViewChild } fro
 import { NavbarComponent } from './components/nav-bar/navbar.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { DOCUMENT, NgStyle } from '@angular/common';
+import { Subscription } from 'rxjs';
+import { ScrollbarService } from './services/scrollbar.service';
 
 @Component({
   selector: 'app-root',
@@ -13,20 +15,25 @@ export class AppComponent {
   @ViewChild('appLayout') appLayoutRef: ElementRef | undefined;
   maxScroll: number = 0; // Variable to store max scroll value
   scrollPercentage: number = 0; // Variable to store scroll percentage
-  scrollBarStyle: string = 'width: 0%'; // String to hold the dynamic width of the scrollbar
+  private scrollSubscription: Subscription;
 
   constructor(
     private renderer: Renderer2,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
+    private scrollbarService: ScrollbarService
   ) {
     this.detectFirefox();
   }
 
   ngAfterViewInit() {
     // Initialize the max scroll position once the view is ready
-    this.calculateMaxScroll();
+    // Subscribe to the scroll percentage changes
+    this.scrollSubscription = this.scrollbarService.scrollPercentageVariable$.subscribe(value => {
+      this.scrollPercentage = value;
+      this.calculateMaxScroll();
+    });
   }
-
+  
   private detectFirefox() {
     // Detect if the browser is Firefox by checking the user agent
     if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
@@ -57,9 +64,6 @@ export class AppComponent {
         // Calculate the scroll percentage normally and round to the nearest whole number
         this.scrollPercentage = Math.round((currentScroll / this.maxScroll) * 100);
       }
-
-      // Dynamically update the width of the scrollbar based on scrollPercentage
-      this.scrollBarStyle = `width: ${this.scrollPercentage}%`;
     }
   }
 
@@ -67,5 +71,12 @@ export class AppComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     this.calculateMaxScroll();  // Recalculate max scroll value on resize
+  }
+
+  ngOnDestroy(): void {
+    // Unsubscribe to prevent memory leaks
+    if (this.scrollSubscription) {
+      this.scrollSubscription.unsubscribe();
+    }
   }
 }
