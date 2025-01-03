@@ -27,14 +27,11 @@ export class AppComponent {
 
   ngAfterViewInit() {
     // Initialize the max scroll position once the view is ready
-    console.log('11');
     // Subscribe to the scroll percentage changes
     this.scrollSubscription = this.scrollbarService.scrollPercentageVariable$.subscribe(value => {
-      console.log('22');
       this.scrollPercentage = value;
       this.calculateMaxScroll();
     });
-    console.log('33');
   }
   
   private detectFirefox() {
