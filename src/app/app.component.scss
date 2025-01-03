@@ -1,0 +1,43 @@
+/* Ensure body and html take full height */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Main container should be full height and use flex */
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Stack navbar on top and layout below */
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Navbar stays at the top */
+app-navbar {
+    flex: 0 0 auto;
+}
+
+/* App layout fills the remaining space */
+.app-layout {
+    flex: 1 1 auto;
+    /* This allows it to grow and take available space */
+    overflow-y: auto;
+    /* Enables scrolling when content overflows */
+    background-color: white;
+}
+
+.scrollbar-container {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 4px;
+
+    .scrollbar {
+        width: 100%;
+        background-color: #ff9800;
+        transition: height 0.2s ease-out;
+    }
+}

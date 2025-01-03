@@ -1,0 +1,30 @@
+.main-container{
+    width: 100%;
+}
+
+.navbar-container{
+    width: inherit;
+    min-height: 70px;
+    background-color: black;
+    
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.start-position{
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.end-position{
+    width: 36px;
+    height: 36px;
+    
+    img{
+        width: 36px;
+        height: 36px;
+    }
+}

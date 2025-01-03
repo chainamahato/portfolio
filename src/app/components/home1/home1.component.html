@@ -1,0 +1,116 @@
+<div class="main-container">
+    <div class="inner-content">
+        <div class="hero-page padding">
+            <div class="hero-header">
+                <span><span class="bold">Designing</span> a Better<br> <span class="bold">World</span> Today</span>
+            </div>
+            <div class="hero-description">
+                <span>Welcome to our world of endless imagination and boundless creativity. Together, let's embark on a remarkable journey where dreams become tangible realities.</span>
+            </div>
+            <div class="hero-btns">
+                <button class="primary-btn what-i-do-btn" (click)="scrollToFooter()">
+                    <span>WHAT I DO</span>
+                    <div class="arrow-icon">
+                        <img src="/assets/images/icons/arrow_right.svg" alt="">
+                    </div>
+                </button>
+                <button class="primary-btn view-work-btn">
+                    <span>VIEW WORK</span>
+                    <div class="arrow-icon">
+                        <img src="/assets/images/icons/arrow_right.svg" alt="">
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="what-i-do-page padding" #whatIDO>
+            <div class="what-i-do-header">
+                <span class="what-i-do-description">Professionals focused on helping your brand <br> grow and move forward.</span>
+                <div class="what-i-do-main-heading">
+                    <div class="line">
+                        <span class="text"><span class="bold">Unique</span> Ideas</span>
+                    </div>
+                    <div class="line">
+                        <span class="text"><span class="bold">For Your</span> Business</span>
+                        <button class="primary-btn what-i-do-btn">
+                            <span>WHAT I DO</span>
+                            <div class="arrow-icon">
+                                <img src="/assets/images/icons/arrow_right.svg" alt="">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="what-i-do-cards">
+                <div class="card">
+                    <a href="#">
+                        <h5>Branding and Identity Design</h5>
+                        <p>Branding and Identity DesignBranding and Identity DesignBranding and Identity DesignBranding and Identity Design</p>
+                        <div class="card-img-container">
+                            <img src="/assets/images/icons/arrow_right.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <h5>Branding and Identity Design</h5>
+                        <p>Branding and Identity DesignBranding and Identity DesignBranding and Identity DesignBranding and Identity Design</p>
+                        <div class="card-img-container">
+                            <img src="/assets/images/icons/arrow_right.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <h5>Branding and Identity Design</h5>
+                        <p>Branding and Identity DesignBranding and Identity DesignBranding and Identity DesignBranding and Identity Design</p>
+                        <div class="card-img-container">
+                            <img src="/assets/images/icons/arrow_right.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <h5>Branding and Identity Design</h5>
+                        <p>Branding and Identity DesignBranding and Identity DesignBranding and Identity DesignBranding and Identity Design</p>
+                        <div class="card-img-container">
+                            <img src="/assets/images/icons/arrow_right.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-page padding" #footer>
+            <div class="footer-start">
+                <div>
+                    <h3>Anil Jangir</h3>
+                    <p>ashasjd ahdjashd ahdja sdas as dhjadhja </p>
+                </div>
+            </div>
+            <div class="footer-end">
+                    <div class="footer-tabs">
+                        <div class="tabs-start">
+                            <a *ngFor="let tab of footerTabsStart" href="#">{{tab}}</a>
+                        </div>
+                        
+                        <div class="tabs-end">
+                            <a *ngFor="let tab of footerTabsEnd" href="#">{{tab}}</a>
+                        </div>
+                    </div>
+                <div class="contacts">
+                    <div *ngFor="let address of contacts" class="contact">
+                        <h3>{{ address.header }}</h3>
+                        <span>{{ address.address }}</span>
+                        <span>{{ address.phone }}</span>
+                        <span>{{ address.email }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

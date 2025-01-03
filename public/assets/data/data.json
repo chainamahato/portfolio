@@ -1,0 +1,241 @@
+{
+    "resume": {
+        "personalInformation": {
+            "fullName": "John Doe",
+            "dob": "09 March 2000",
+            "profilePic": "/assets/images/pictures/profile_pic.jpeg",
+            "contacts": [
+                {
+                    "name": "dob",
+                    "value": "09 March 2000"
+                },
+                {
+                    "name": "email",
+                    "value": "johndoe@example.com"
+                },
+                {
+                    "name": "phone",
+                    "value": "+1 234 567 890"
+                },
+                {
+                    "name": "address",
+                    "value": "1234 Main St, Apt 56, Some City, Some Country"
+                }
+            ],
+
+            "_comment1_": "Tags are optional",
+            "tags": [
+                "Creative Director",
+                "Graphic Designer"
+            ],
+            
+            "_comment2_": "Social Media is optional",
+            "socialMedia": [
+                {
+                    "name": "facebook",
+                    "icon": "/assets/images/icons/facebook.png",
+                    "url": ""
+                },
+                {
+                    "name": "linkedin",
+                    "icon": "/assets/images/icons/linkedin.png",
+                    "url": ""
+                },
+                {
+                    "name": "twitter",
+                    "icon": "/assets/images/icons/twitter.png",
+                    "url": ""
+                }
+            ]
+        },
+        "professionalInformation": {
+            "aboutMe": {
+                "heading": "About Me",
+                "bg_color": "white",
+                "description": [
+                    "A passionate and results-driven software engineer with 5+ years of experience specializing in web development and cloud technologies. Looking to contribute my skills in a challenging development role.",
+                    "A passionate and results-driven software engineer with 5+ years of experience specializing in web development and cloud technologies. Looking to contribute my skills in a challenging development role."
+                ]
+            },
+            "projects": {
+                "heading": "Projects",
+                "bg_color": "rgba(0, 0, 0, 0.05)",
+                "items": [
+                    {
+                        "title": "Portfolio Website",
+                        "description": "A personal website to showcase my resume, projects, and blog posts. Built using Angular and hosted on AWS.",
+                        "technologies": [
+                            "Angular",
+                            "AWS",
+                            "HTML",
+                            "CSS",
+                            "Bootstrap"
+                        ],
+                        "url": "https://github.com/johndoe/portfolio",
+                        "urlName": "Link"
+                    },
+                    {
+                        "title": "E-commerce Platform",
+                        "description": "Developed an e-commerce platform with features like user authentication, product catalog, and payment integration.",
+                        "technologies": [
+                            "React",
+                            "Node.js",
+                            "MongoDB",
+                            "Stripe API"
+                        ],
+                        "url": "https://github.com/johndoe/portfolio"
+                    }
+                ]
+            },
+            "education": {
+                "heading": "Education",
+                "bg_color": "white",
+                "items": [
+                    {
+                        "degree": "Bachelor of Science in Computer Science",
+                        "institution": "Some University",
+                        "location": "Some City, Some Country",
+                        "graduationYear": 2018,
+                        "gpa": "3.9/4.0"
+                    },
+                    {
+                        "degree": "Bachelor of Science in Computer Science",
+                        "institution": "Some University",
+                        "location": "Some City, Some Country",
+                        "graduationYear": 2018,
+                        "gpa": "3.9/4.0"
+                    },
+                    {
+                        "degree": "Bachelor of Science in Computer Science",
+                        "institution": "Some University",
+                        "location": "Some City, Some Country",
+                        "graduationYear": 2018,
+                        "gpa": "3.9/4.0"
+                    }
+                ]
+            },
+            "workExperience": {
+                "heading": "Work Experience",
+                "bg_color": "rgba(0, 0, 0, 0.05)",
+                "items": [
+                    {
+                        "jobTitle": "Software Engineer",
+                        "company": "Tech Solutions Inc.",
+                        "location": "Some City, Some Country",
+                        "startDate": "January 2020",
+                        "endDate": "Present",
+                        "responsibilities": [
+                            "Developed web applications using Angular and Node.js.",
+                            "Collaborated with cross-functional teams to design and implement scalable solutions.",
+                            "Contributed to API design and database optimization.",
+                            "Led code reviews and mentored junior developers."
+                        ]
+                    },
+                    {
+                        "jobTitle": "Frontend Developer",
+                        "company": "Web Innovators LLC",
+                        "location": "Some City, Some Country",
+                        "startDate": "June 2018",
+                        "endDate": "December 2019",
+                        "responsibilities": [
+                            "Worked with the UI/UX team to build responsive and accessible web interfaces.",
+                            "Implemented features using React, Redux, and RESTful APIs.",
+                            "Improved front-end performance and optimized web application load times.",
+                            "Wrote unit tests to ensure code quality."
+                        ]
+                    }
+                ]
+            },
+            "skills": {
+                "heading": "Skills",
+                "bg_color": "white",
+                "items": [
+                    {
+                        "name": "JavaScript",
+                        "value": "10"
+                    },
+                    {
+                        "name": "Python",
+                        "value": "9"
+                    },
+                    {
+                        "name": "React",
+                        "value": "7"
+                    },
+                    {
+                        "name": "Node.js",
+                        "value": "8"
+                    },
+                    {
+                        "name": "CSS",
+                        "value": "6"
+                    },
+                    {
+                        "name": "HTML",
+                        "value": "10"
+                    },
+                    {
+                        "name": "SQL",
+                        "value": "5"
+                    }
+                ],
+                "otherSkills": {
+                    "heading": "Other Skills",
+                    "items": [
+                        "Multi tasking",
+                        "Motivated",
+                        "Interpersonal"
+                    ]
+                }
+            },
+            "certifications": {
+                "heading": "Certifications",
+                "bg_color": "rgba(0, 0, 0, 0.05)",
+                "items": [
+                    {
+                        "title": "Certified AWS Solutions Architect",
+                        "institution": "Amazon Web Services (AWS)",
+                        "year": 2022
+                    },
+                    {
+                        "title": "Certified Kubernetes Administrator",
+                        "institution": "Cloud Native Computing Foundation",
+                        "year": 2021
+                    }
+                ]
+            },
+            "languages": {
+                "heading": "Languages",
+                "bg_color": "white",
+                "items": [
+                    {
+                        "language": "English"
+                    },
+                    {
+                        "language": "Spanish"
+                    }
+                ]
+            },
+            "references": {
+                "heading": "References",
+                "bg_color": "rgba(0, 0, 0, 0.05)",
+                "items": [
+                    {
+                        "name": "Jane Smith",
+                        "relationship": "Manager",
+                        "company": "Tech Solutions Inc.",
+                        "email": "janesmith@techsolutions.com",
+                        "phone": "+1 234 567 891"
+                    },
+                    {
+                        "name": "Robert Brown",
+                        "relationship": "Professor",
+                        "company": "Some University",
+                        "email": "robert.brown@someuniversity.edu",
+                        "phone": "+1 234 567 892"
+                    }
+                ]
+            }
+        }
+    }
+}

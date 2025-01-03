@@ -1,0 +1,155 @@
+<div class="main-container">
+    <div class="inner-content">
+        <div class="resume padding">
+            <div class="personal-info">
+                <div class="profile-pic">
+                    <img src="{{ data.personalInformation.profilePic }}" alt="">
+                </div>
+                <h3>{{ data.personalInformation.fullName }}</h3>
+                <div class="tags">
+                    <div class="tag" *ngFor="let tag of data.personalInformation.tags">{{ tag }}</div>
+                </div>
+                <div class="social-media">
+                    <button *ngFor="let item of data.personalInformation.socialMedia">
+                        <img src="{{ item.icon }}" alt="">
+                    </button>
+                </div>
+                <div class="contacts">
+                    <span *ngFor="let item of data.personalInformation.contacts">{{ item.value }}</span>
+                </div>
+                <button [disabled]="resumeDownloading" class="primary-btn" (click)="downloadCV()"
+                    [ngClass]="{ 'resume-downloaded': resumeDownloading }">
+                    <span *ngIf="!resumeDownloading">DOWNLOAD CV</span>
+                    <div *ngIf="!resumeDownloading" class="arrow-icon">
+                        <img src="/assets/images/icons/download.svg" alt="">
+                    </div>
+                    <div *ngIf="resumeDownloading" class="arrow-icon-downloaded animate">
+                        <span>CV DOWNLOADED</span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="professional-info">
+                <div *ngIf="data?.professionalInformation?.aboutMe" class="about-me"
+                    [ngStyle]="{'background-color': data?.professionalInformation?.aboutMe?.bg_color}">
+                    <h3>{{ data.professionalInformation.aboutMe.heading }}</h3>
+                    <div class="line"></div>
+                    <p *ngFor="let description of data.professionalInformation.aboutMe.description">{{ description }}
+                    </p>
+                </div>
+
+                <div *ngIf="data?.professionalInformation?.projects" class="projects"
+                    [ngStyle]="{'background-color': data?.professionalInformation?.projects?.bg_color}">
+                    <h3>{{ data.professionalInformation.projects.heading }}</h3>
+                    <div class="projects-cards">
+                        <div *ngFor="let card of data.professionalInformation.projects.items; let i = index"
+                            class="card"
+                            [ngClass]="{ 'single-card': data.professionalInformation.projects.items.length === 1 }">
+                            <h5>{{ i + 1 }}. {{ card.title }}</h5>
+                            <p>{{ card.description }}</p>
+                            <div *ngIf="card?.technologies" class="technologies">
+                                <span *ngFor="let tech of card.technologies">{{ tech }}</span>
+                            </div>
+                            <a *ngIf="card?.url" href="{{ card.url }}" target="_blank" rel="noopener noreferrer">{{
+                                card?.urlName ? card.urlName : 'KNOW MORE' }}</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="data?.professionalInformation?.education" class="education"
+                    [ngStyle]="{'background-color': data?.professionalInformation?.education?.bg_color}">
+                    <h3>{{ data.professionalInformation.education.heading }}</h3>
+                    <div class="education-cards">
+                        <div *ngFor="let card of data.professionalInformation.education.items; let i = index"
+                            class="card">
+                            <div class="degree">
+                                <h3>{{ card.degree }}</h3>
+                                <span>{{ card.graduationYear }}</span>
+                            </div>
+                            <div class="institute">
+                                <h3>{{ card.institution }}, {{ card.location }}</h3>
+                                <span>{{ card.gpa }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="data?.professionalInformation?.workExperience" class="work-experience"
+                    [ngStyle]="{'background-color': data?.professionalInformation?.workExperience?.bg_color}">
+                    <h3>{{ data.professionalInformation.workExperience.heading }}</h3>
+                    <div class="work-experience-cards">
+                        <div *ngFor="let card of data.professionalInformation.workExperience.items; let i = index"
+                            class="card">
+                            <div class="job-title">
+                                <h3>{{ card.jobTitle }}</h3>
+                                <span>{{ card.startDate }} - {{ card.endDate }}</span>
+                            </div>
+                            <div class="company">
+                                <h3>{{ card.company }}, {{ card.location }}</h3>
+                                <ul>
+                                    <li *ngFor="let responsibilitie of card.responsibilities">{{ responsibilitie }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="data?.professionalInformation?.skills" class="skills"
+                    [ngStyle]="{'background-color': data?.professionalInformation?.skills?.bg_color}">
+                    <h3>{{ data.professionalInformation.skills.heading }}</h3>
+                    <div class="skills-cards">
+                        <div *ngFor="let skill of data?.professionalInformation?.skills.items" class="skills-card">
+                            <div class="skill-header">
+                                <span class="skill-name">{{ skill.name }}</span>
+                                <span class="skill-value">{{ skill.value }}/10</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" [ngStyle]="{'width': (skill.value / 10) * 100 + '%'}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="data?.professionalInformation?.skills?.otherSkills" class="other-skills-card">
+                        <h3>{{ data.professionalInformation.skills.otherSkills.heading }}</h3>
+                        <span *ngFor="let otherSkill of data?.professionalInformation?.skills?.otherSkills.items">
+                            - {{ otherSkill }}
+                        </span>
+                    </div>
+                </div>
+
+                <div *ngIf="data?.professionalInformation?.certifications" class="certifications"
+                    [ngStyle]="{'background-color': data?.professionalInformation?.certifications?.bg_color}">
+                    <h3>{{ data.professionalInformation.certifications.heading }}</h3>
+                    <div class="certifications-cards">
+                        <div *ngFor="let certification of data?.professionalInformation?.certifications.items" class="card">
+                            <h2 class="certification-title">{{ certification.title }} <span>({{ certification.year }})</span></h2>
+                            <span *ngIf="certification?.institution">{{ certification.institution }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="data?.professionalInformation?.languages" class="languages"
+                    [ngStyle]="{'background-color': data?.professionalInformation?.languages?.bg_color}">
+                    <h3>{{ data.professionalInformation.languages.heading }}</h3>
+                    <div class="languages-cards">
+                        <div *ngFor="let language of data?.professionalInformation?.languages.items" class="card">
+                            <span>{{ language.language }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="data?.professionalInformation?.references" class="references"
+                    [ngStyle]="{'background-color': data?.professionalInformation?.references?.bg_color}">
+                    <h3>{{ data.professionalInformation.references.heading }}</h3>
+                    <div class="references-cards">
+                        <div *ngFor="let reference of data?.professionalInformation?.references.items" class="card">
+                            <h2>{{ reference?.name ? reference?.name : '' }}{{ reference?.relationship ? (' (' + reference.relationship + ')') : ''}}</h2>
+                            <span>{{ reference?.company ? reference.company : '' }}</span>
+                            <span>{{ reference?.email ? reference?.email : '' }}</span>
+                            <span>{{ reference?.phone ? reference?.phone : '' }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
