@@ -1,0 +1,143 @@
+{
+    "resume": {
+        "personalInformation": {
+            "fullName": "Chaina Mahato",
+            "dob": "15 Jan 1999",
+            "profilePic": "/assets/images/pictures/profile_pic.jpeg",
+            "contacts": [
+                {
+                    "name": "dob",
+                    "value": "20 Dec 1999"
+                },
+                {
+                    "name": "email",
+                    "value": "mahatoc2@gmail.com"
+                },
+                {
+                    "name": "phone",
+                    "value": "+91-9881654432"
+                },
+                {
+                    "name": "address",
+                    "value": "Raladih , Purulia(723127), West Bengal"
+                }
+            ]
+        },
+        "professionalInformation": {
+            "aboutMe": {
+                "heading": "About Me",
+                "bg_color": "white",
+                "description": [
+                    "I am passionate about pursuing a career that challenges and inspires me, with opportunities to work at the forefront of technology. I seek a role where I can contribute meaningfully while continuously learning, innovating, and enhancing my skills. My goal is to align my growth and expertise with the strategic objectives of the company, driving both personal and organizational success."
+                ]
+            },
+            "education": {
+                "heading": "Education",
+                "bg_color": "rgba(0, 0, 0, 0.05)",
+                "items": [
+                    {
+                        "degree": "Diploma in Elementary Education ",
+                        "institution": "Majhihira Ashram Primary Teacher’s Training Institute",
+                        "location": "Purulia, West Bengal",
+                        "graduationYear": 2021,
+                        "gpa": "70%"
+                    },
+                    {
+                        "degree": "Bachelor of Arts in English",
+                        "institution": "Barabazar Bickram Tudu Memorial College",
+                        "location": "Purulia, West Bengal",
+                        "graduationYear": 2020,
+                        "gpa": "75%"
+                    },
+                    {
+                        "degree": "West Bengal Council of Higher Secondary Education",
+                        "institution": "Barabazar High School",
+                        "location": "Purulia, West Bengal",
+                        "graduationYear": 2016,
+                        "gpa": "65%"
+                    },
+                    {
+                        "degree": "West Bengal Board of Secondary Education",
+                        "institution": "Barabazar Girls High School",
+                        "location": "Purulia, West Bengal",
+                        "graduationYear": 2014,
+                        "gpa": "72%"
+                    }
+                ]
+            },
+            "workExperience": {
+                "heading": "Work Experience",
+                "bg_color": "white",
+                "items": [
+                    {
+                        "jobTitle": "Software Engineer",
+                        "company": "Tech Solutions Inc.",
+                        "location": "Some City, Some Country",
+                        "startDate": "January 2020",
+                        "endDate": "Present",
+                        "responsibilities": [
+                            "Developed web applications using Angular and Node.js.",
+                            "Collaborated with cross-functional teams to design and implement scalable solutions.",
+                            "Contributed to API design and database optimization.",
+                            "Led code reviews and mentored junior developers."
+                        ]
+                    },
+                    {
+                        "jobTitle": "Frontend Developer",
+                        "company": "Web Innovators LLC",
+                        "location": "Some City, Some Country",
+                        "startDate": "June 2018",
+                        "endDate": "December 2019",
+                        "responsibilities": [
+                            "Worked with the UI/UX team to build responsive and accessible web interfaces.",
+                            "Implemented features using React, Redux, and RESTful APIs.",
+                            "Improved front-end performance and optimized web application load times.",
+                            "Wrote unit tests to ensure code quality."
+                        ]
+                    }
+                ]
+            },
+            "skills": {
+                "heading": "Skills",
+                "bg_color": "rgba(0, 0, 0, 0.05)",
+                "items": [
+                    {
+                        "name": "Advanced Diploma in Computer Application",
+                        "value": "7"
+                    },
+                    {
+                        "name": "MS Office: MS Word, MS Excel, MS PowerPoint",
+                        "value": "8"
+                    },
+                    {
+                        "name": "Operating Systems: Windows 11, 10, 8, 7 & XP",
+                        "value": "8"
+                    }
+                ],
+                "otherSkills": {
+                    "heading": "Other Skills",
+                    "items": [
+                        "Multi tasking",
+                        "Motivated",
+                        "Interpersonal"
+                    ]
+                }
+            },
+            "languages": {
+                "heading": "Languages",
+                "bg_color": "white",
+                "items": [
+                    {
+                        "language": "Bengali"
+                    },
+                    {
+                        "language": "Hindi"
+                    },
+                    {
+                        "language": "English"
+                    }
+                ]
+            }
+        }
+    }
+}
