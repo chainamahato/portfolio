@@ -139,5 +139,12 @@
                 ]
             }
         }
+    },
+    "about": {
+        "greeting": "Hello! My name is",
+        "name": "Chaina Mahato",
+        "about": "Passionately Creating Design Wonders, Unleashing Boundless Creativity",
+        "profilePic": "./assets/images/icons/main-character.jpg",
+        "description": "Create a better world today"
     }
 }
